@@ -22,9 +22,10 @@ jobs:
         working-directory: ui-payment
         env:
           VITE_BACKEND_HOST: '//'
-          VITE_SUPPORT_EMAIL: 'help@site.com'
+          VITE_SUPPORT_EMAIL: 'support@horizonfp.io'
           VITE_ROOTPATH: '/p/'
           VITE_SHOW_BRANDING: 'true'
+          VITE_SUPPORT_URL: 'https://support.yoursite.com'
 
       - name: Publish dist
         uses: actions/upload-artifact@v3
