@@ -63,7 +63,7 @@ const ErrorPage: React.FC = () => {
                         <div className="mx-auto flex items-center justify-center mb-3">
                             <a
                                 className="relative border rounded-3xl border-main-green-1 w-full h-14 color-black font-medium text-xl flex items-center justify-center"
-                                href=https://my.hoory.ai/horizonfp
+                                href="https://my.hoory.ai/horizonfp"
                             >
                                 Contact Support
                                 <Icon
