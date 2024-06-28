@@ -125,8 +125,8 @@
         "decimals": "18",
         "networkId": "56",
         "testNetworkId": "97",
-        "minimal_withdrawal_amount_usd": "10",
-        "minimal_instant_internal_transfer_amount_usd": "30"
+        "minimal_withdrawal_amount_usd": "1",
+        "minimal_instant_internal_transfer_amount_usd": "10"
     },
     {
         "blockchain": "BSC",
