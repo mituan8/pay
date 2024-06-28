@@ -332,8 +332,12 @@ const PaymentPage: React.FC = () => {
                     <span className="block mx-auto text-sm mb-7 font-medium text-center text-card-desc sm:hidden">
                         Please ensure that you send the correct amount as specified. Make sure to include any fees in the total amount to ensure we receive the full payment required for your order.
                     </span>
+                            textToCopy={getPrice()}  // Assuming getPrice() returns the formatted amount
+                            displayText={getPrice() + " " + payment.paymentMethod.displayName}
+                          />
                 </>
             )}
+
 
             {payment && !payment.isLocked && (
                 <>
