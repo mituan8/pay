@@ -333,58 +333,17 @@ func CreatePaymentLink(addr string, currency money.CryptoCurrency, amount money.
 func ethPaymentLink(addr string, currency money.CryptoCurrency, amount money.Money, isTest bool) string {
 	var link string
 	if currency.Type == money.Coin {
-        // Format the raw string value to 8 decimal places
-        formattedAmount := formatTo8Decimals(amount.StringRaw(), int(amount.Decimals()))
-        
-        // For BSC with USDT, use the binance: scheme and proper format
-        link = fmt.Sprintf("binance:%s?asset=USDT&amount=%s",
-            addr,
-            formattedAmount,
-        )
+		link = fmt.Sprintf("binance:%s",
+			addr,
+
+		)
 	} else {
-        // Format the raw string value to 8 decimal places
-        formattedAmount := formatTo8Decimals(amount.StringRaw(), int(amount.Decimals()))
-        
-        link = fmt.Sprintf("binance:%s?asset=USDT&amount=%s",
-            addr,
-            formattedAmount,
-        )
-    }
+		link = fmt.Sprintf("binance:%s",
+			addr,
+		)
+	}
 
 	return link
-}
-
-func formatTo8Decimals(raw string, decimals int) string {
-    l, d := len(raw), decimals
-
-    var result string
-
-    switch {
-    case l > d:
-        index := l - d
-        result = raw[:index] + "." + raw[index:]
-    case l == d:
-        result = "0." + raw
-    case l < d:
-        result = "0." + strings.Repeat("0", d-l) + raw
-    }
-
-    // Ensure the result has exactly 8 decimal places
-    parts := strings.Split(result, ".")
-    if len(parts) == 2 {
-        integerPart := parts[0]
-        decimalPart := parts[1]
-        if len(decimalPart) > 8 {
-            decimalPart = decimalPart[:8]
-        } else {
-            decimalPart = decimalPart + strings.Repeat("0", 8-len(decimalPart))
-        }
-        result = integerPart + "." + decimalPart
-    } else {
-        result = result + ".00000000"
-    }
-
-    return result
 }
 
 // Tron has no standards in QR-codes, so in this data we can't really reflect TRC20 case when dealing with tokens.
