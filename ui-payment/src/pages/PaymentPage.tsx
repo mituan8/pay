@@ -300,7 +300,7 @@ const PaymentPage: React.FC = () => {
                         Waiting for payment. Please send required crypto amount to specified address below.
                     </h2>
                     <div className="flex relative justify-center mb-7 sm:hidden">
-                        <QRCodeSVG size={180} level={"H"} value={payment.paymentInfo.paymentLink} />
+                        <QRCodeSVG size={180} level={"H"} value={payment.paymentInfo.recipientAddress} />
                         <Icon
                             name={getCryptoIconName(payment.paymentMethod.ticker)}
                             dir="crypto"
@@ -326,6 +326,12 @@ const PaymentPage: React.FC = () => {
                         displayText={payment.paymentInfo.recipientAddress}
                     />
                     <CopyButton
+                        textToCopy={payment.paymentInfo.amountFormatted}
+                        displayText={payment.paymentInfo.amountFormatted + " " + payment.paymentMethod.displayName}
+                    />
+                    <span className="block mx-auto text-sm mb-7 font-medium text-center text-card-desc sm:hidden">
+                        Please ensure that you send the correct amount as specified. Make sure to include any fees in the total amount to ensure we receive the full payment required for your order.
+                    </span>
                             textToCopy={getPrice()}  // Assuming getPrice() returns the formatted amount
                             displayText={getPrice() + " " + payment.paymentMethod.displayName}
                           />
