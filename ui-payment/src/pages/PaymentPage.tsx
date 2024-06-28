@@ -326,11 +326,12 @@ const PaymentPage: React.FC = () => {
                         displayText={payment.paymentInfo.recipientAddress}
                     />
                     <CopyButton
-                        textToCopy={payment.paymentInfo.amountFormatted}
-                        displayText={payment.paymentInfo.amountFormatted + " " + payment.paymentMethod.displayName}
-                    />
+                            textToCopy={getPrice()}  {/* Assuming getPrice() returns the formatted amount */}
+                            displayText={getPrice() + " " + payment.paymentMethod.displayName}
+                        />
                 </>
             )}
+
 
             {payment && !payment.isLocked && (
                 <>
