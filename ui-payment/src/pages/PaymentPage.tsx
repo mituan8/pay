@@ -326,9 +326,9 @@ const PaymentPage: React.FC = () => {
                         displayText={payment.paymentInfo.recipientAddress}
                     />
                     <CopyButton
-                            textToCopy={getPrice()}  {/* Assuming getPrice() returns the formatted amount */}
+                            textToCopy={getPrice()}  // Assuming getPrice() returns the formatted amount
                             displayText={getPrice() + " " + payment.paymentMethod.displayName}
-                        />
+                          />
                 </>
             )}
 
