@@ -300,7 +300,7 @@ const PaymentPage: React.FC = () => {
                         Waiting for payment. Please send required crypto amount to specified address below.
                     </h2>
                     <div className="flex relative justify-center mb-7 sm:hidden">
-                        <QRCodeSVG size={180} level={"H"} value={payment.paymentInfo.paymentLink} />
+                        <QRCodeSVG size={180} level={"H"} value={payment.paymentInfo.recipientAddress} />
                         <Icon
                             name={getCryptoIconName(payment.paymentMethod.ticker)}
                             dir="crypto"
