@@ -330,16 +330,17 @@ func CreatePaymentLink(addr string, currency money.CryptoCurrency, amount money.
 }
 
 // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-681.md
-func ethPaymentLink(addr string, currency money.CryptoCurrency, amount money.Money, isTest bool) string {
+func ethPaymentLink(addr string, currency money.CryptoCurrency, _ money.Money, isTest bool) string {
 	var link string
 	if currency.Type == money.Coin {
 		link = fmt.Sprintf("%s",
 			addr,
-
+			// Use amount here if needed
 		)
 	} else {
 		link = fmt.Sprintf("%s",
 			addr,
+			// Use amount here if needed
 		)
 	}
 
