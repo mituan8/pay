@@ -321,7 +321,7 @@ func DefaultSetup(s *CurrencyResolver) error {
 func CreatePaymentLink(addr string, currency money.CryptoCurrency, amount money.Money, isTest bool) (string, error) {
 	switch kms.Blockchain(currency.Blockchain) {
 	case kms.ETH, kms.MATIC, kms.BSC:
-		return ethPaymentLink(addr, currency, amount, isTest), nil
+		return ethPaymentLink(addr), nil
 	case kms.TRON:
 		return tronPaymentLink(addr, currency, amount, isTest), nil
 	}
@@ -331,7 +331,7 @@ func CreatePaymentLink(addr string, currency money.CryptoCurrency, amount money.
 
 // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-681.md
 // Reworked since it had lint problems
-func ethPaymentLink(addr string, currency money.CryptoCurrency, _ money.Money, _ bool) string {
+func ethPaymentLink(addr string) string {
 	return addr
 }
 
