@@ -330,21 +330,9 @@ func CreatePaymentLink(addr string, currency money.CryptoCurrency, amount money.
 }
 
 // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-681.md
-func ethPaymentLink(addr string, currency money.CryptoCurrency, _ money.Money, isTest bool) string {
-	var link string
-	if currency.Type == money.Coin {
-		link = fmt.Sprintf("%s",
-			addr,
-			// Use amount here if needed
-		)
-	} else {
-		link = fmt.Sprintf("%s",
-			addr,
-			// Use amount here if needed
-		)
-	}
-
-	return link
+// Reworked since it had lint problems
+func ethPaymentLink(addr string, currency money.CryptoCurrency, _ money.Money, _ bool) string {
+	return addr
 }
 
 // Tron has no standards in QR-codes, so in this data we can't really reflect TRC20 case when dealing with tokens.
