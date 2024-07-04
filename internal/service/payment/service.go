@@ -53,7 +53,7 @@ const ExpirationPeriodForLocked = time.Minute * 20
 
 // ExpirationPeriodForNotLocked expiration period for non-locked payment
 // e.g. when payment is created but user haven't opened the page or haven't locked a cryptocurrency.
-const ExpirationPeriodForNotLocked = time.Hour * 6
+const ExpirationPeriodForNotLocked = time.Minute * 20
 
 const MerchantIDWildcard = transaction.MerchantIDWildcard
 
