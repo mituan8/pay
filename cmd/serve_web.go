@@ -4,9 +4,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/oxygenpay/oxygen/internal/app"
-	"github.com/oxygenpay/oxygen/internal/config"
-	"github.com/oxygenpay/oxygen/pkg/graceful"
+	"github.com/mituan8/pay/internal/app"
+	"github.com/mituan8/pay/internal/config"
+	"github.com/mituan8/pay/pkg/graceful"
 	"github.com/spf13/cobra"
 )
 

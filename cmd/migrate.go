@@ -12,8 +12,8 @@ import (
 	//nolint:revive.
 	_ "github.com/jackc/pgx/v4/stdlib"
 	"github.com/olekukonko/tablewriter"
-	"github.com/oxygenpay/oxygen/internal/config"
-	"github.com/oxygenpay/oxygen/scripts"
+	"github.com/mituan8/pay/internal/config"
+	"github.com/mituan8/pay/scripts"
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/spf13/cobra"
 )

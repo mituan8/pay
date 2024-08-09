@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/oxygenpay/oxygen/internal/config"
+	"github.com/mituan8/pay/internal/config"
 	"github.com/spf13/cobra"
 )
 

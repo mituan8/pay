@@ -3,8 +3,8 @@ package cmd
 import (
 	"context"
 
-	"github.com/oxygenpay/oxygen/internal/kms"
-	"github.com/oxygenpay/oxygen/pkg/graceful"
+	"github.com/mituan8/pay/internal/kms"
+	"github.com/mituan8/pay/pkg/graceful"
 	"github.com/spf13/cobra"
 )
 

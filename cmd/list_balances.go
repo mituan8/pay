@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/olekukonko/tablewriter"
-	"github.com/oxygenpay/oxygen/internal/app"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
+	"github.com/mituan8/pay/internal/app"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/wallet"
 	"github.com/spf13/cobra"
 )
 

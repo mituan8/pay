@@ -7,11 +7,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/oxygenpay/oxygen/internal/app"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/processing"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
-	"github.com/oxygenpay/oxygen/internal/util"
+	"github.com/mituan8/pay/internal/app"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/processing"
+	"github.com/mituan8/pay/internal/service/wallet"
+	"github.com/mituan8/pay/internal/util"
 	"github.com/samber/lo"
 	"github.com/spf13/cobra"
 )
