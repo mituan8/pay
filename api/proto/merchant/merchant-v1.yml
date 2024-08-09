@@ -15,12 +15,12 @@ info:
     ## Authentication 🔐
     API uses token based authentication that you need to provide in each request. `X-O2PAY-TOKEN` is used as key. 
     You can obtain API token in merchant's settings in dashboard at
-    <a href="https://app.o2pay.co" target="_blank">app.o2pay.co</a>
+    <a href="https://app.aefbay.com" target="_blank">app.aefbay.com</a>
     
     Example request:
     ```bash
       curl --header 'X-O2PAY-TOKEN: <your-token>' \
-        https://api.o2pay.co/api/merchant/v1/merchant/5a51e7a5-f0c8-48dc-a9fb-a335481ae846/balance
+        https://api.aefbay.com/api/merchant/v1/merchant/5a51e7a5-f0c8-48dc-a9fb-a335481ae846/balance
     ```
     
     Unauthorized requests return `401 Unauthorized` response:
@@ -34,7 +34,7 @@ info:
     ## Quickstart 🚀
     - [Create payment](#tag/Payment/operation/createPayment) 
 
-host: api.o2pay.co
+host: api.aefbay.com
 basePath: /api/merchant/v1
 produces: [ application/json ]
 schemes: [ https ]
@@ -54,7 +54,7 @@ tags:
     description: |
       Links are the easy way of accepting payments from your customers.
       Each link represents a pre-defined payment with amount and description.
-      Customer can create a payment on-the-fly by visiting `https://pay.o2pay.co/link/<link>`
+      Customer can create a payment on-the-fly by visiting `https://pay.aefbay.com/link/<link>`
 
 paths:
   /merchant/{merchantId}/payment:
