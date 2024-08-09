@@ -67,7 +67,7 @@ feel free to ask them in our [telegram community](https://t.me/oxygenpay_en)
 - [x] Support for Binance Smart Chain (BNB, BUSD)
 - [ ] Donations feature
 - [ ] Support for [WalletConnect](https://walletconnect.com/)
-- [ ] SDKs for (Python, JavaScript, PHP, etc...)
+- [x] SDKs for (Python, JavaScript, PHP, etc...)
 - [ ] Support for all major ETH Layer 2 Chains
 - [ ] Support for blockchain notification providers other than Tatum
 - [ ] Integration with DEXes for automatic swaps: convert incoming crypto to stablecoins
