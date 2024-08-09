@@ -4,7 +4,7 @@ logger:
 
 oxygen:
   postgres:
-    data_source: "host=localhost sslmode=disable dbname=oxygen user=oxygen password=qwerty pool_max_conns=32"
+    data_source: "host=postgres sslmode=disable dbname=oxygen user=oxygen password=oxygen pool_max_conns=32"
   server:
     port: 80
     session:
@@ -12,14 +12,14 @@ oxygen:
       secret: session-secret
     cors:
       allow_origins:
-        - https://pay.site.com
+        - https://app.aefbay.com
   processing:
-    webhook_base_path: https://pay.site.com
-    payment_frontend_base_path: https://pay.site.com
+    webhook_base_path: https://app.aefbay.com
+    payment_frontend_base_path: https://app.aefbay.com
   auth:
     email:
-      merchant_email: your.address@gmail.com
-      merchant_password: <your-password-at-least-8-chars>
+      merchant_email: TRX887@outlook.com
+      merchant_password: 9nf3UIi8OWnu@
 
 kms:
   server:
@@ -29,10 +29,10 @@ kms:
 
 providers:
   tatum:
-    api_key: <tatum-api-key>
-    test_api_key: <tatum-test-api-key>
-    tatum_hmac_secret: <replace-with-random-string>
+    api_key: t-66b00c135d631f001d61da8c-f57a46d6da644ad685e58eb1
+    test_api_key: t-66b00c135d631f001d61da8c-07bc7aef42df4e58a2951873
+    tatum_hmac_secret: t-66b00c135d631f001d61da8c-f57a46d6da644ad685e58eb1
   trongrid:
-    api_key: <trongrid-api-key>
+    api_key: 60460075-93e3-4ec6-bd04-7509f2227050
   kms:
     host: localhost:14000
