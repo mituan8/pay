@@ -1,3 +1,10 @@
+*.yaml
+*.yml
+*.json
+*.md
+
+.env
+
 # Logs
 logs
 *.log
@@ -8,19 +15,21 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+public
 dist
 dist-ssr
 *.local
 
+package.json
+package-lock.json
+
 # Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-tsconfig.tsbuildinfo
-
-.env*
-!.env.example
