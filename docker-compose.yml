@@ -1,7 +1,14 @@
 version: '3.8'
 services:
 oxygen:
+    image: ghcr.io/mituan8/pay:latest
+    command: all-in-one --skip-config
     env_file: [ oxygen.env ]
+    volumes: [ 'app-volume:/app' ]
+    ports: [ '80:80' ]
+    networks: [ net-oxygen ]
+    depends_on: [ postgres ]
+    restart: on-failure
   postgres:
     image: postgres:15-alpine
     command: postgres -c log_statement=all
