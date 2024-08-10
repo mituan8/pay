@@ -3,7 +3,7 @@ package wallet
 import (
 	"context"
 
-	"github.com/oxygenpay/oxygen/internal/db/repository"
+	"github.com/mituan8/pay/internal/db/repository"
 	"github.com/pkg/errors"
 )
 

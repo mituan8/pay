@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"strconv"
 
-	kms "github.com/oxygenpay/oxygen/internal/kms/wallet"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/blockchain"
-	"github.com/oxygenpay/oxygen/internal/util"
-	kmsclient "github.com/oxygenpay/oxygen/pkg/api-kms/v1/client/wallet"
-	kmsmodel "github.com/oxygenpay/oxygen/pkg/api-kms/v1/model"
+	kms "github.com/mituan8/pay/internal/kms/wallet"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/blockchain"
+	"github.com/mituan8/pay/internal/util"
+	kmsclient "github.com/mituan8/pay/pkg/api-kms/v1/client/wallet"
+	kmsmodel "github.com/mituan8/pay/pkg/api-kms/v1/model"
 	"github.com/pkg/errors"
 )
 
