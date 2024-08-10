@@ -7,11 +7,11 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/oxygenpay/oxygen/internal/kms/wallet"
-	"github.com/oxygenpay/oxygen/internal/provider/trongrid"
-	"github.com/oxygenpay/oxygen/internal/test"
-	"github.com/oxygenpay/oxygen/internal/util"
-	"github.com/oxygenpay/oxygen/pkg/api-kms/v1/model"
+	"github.com/mituan8/pay/internal/kms/wallet"
+	"github.com/mituan8/pay/internal/provider/trongrid"
+	"github.com/mituan8/pay/internal/test"
+	"github.com/mituan8/pay/internal/util"
+	"github.com/mituan8/pay/pkg/api-kms/v1/model"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

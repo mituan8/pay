@@ -4,10 +4,10 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/oxygenpay/oxygen/internal/kms/wallet"
-	httpServer "github.com/oxygenpay/oxygen/internal/server/http"
-	"github.com/oxygenpay/oxygen/internal/server/http/common"
-	"github.com/oxygenpay/oxygen/pkg/api-kms/v1/model"
+	"github.com/mituan8/pay/internal/kms/wallet"
+	httpServer "github.com/mituan8/pay/internal/server/http"
+	"github.com/mituan8/pay/internal/server/http/common"
+	"github.com/mituan8/pay/pkg/api-kms/v1/model"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 )
