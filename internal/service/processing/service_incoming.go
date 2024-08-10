@@ -5,11 +5,11 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/blockchain"
-	"github.com/oxygenpay/oxygen/internal/service/payment"
-	"github.com/oxygenpay/oxygen/internal/service/transaction"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/blockchain"
+	"github.com/mituan8/pay/internal/service/payment"
+	"github.com/mituan8/pay/internal/service/transaction"
+	"github.com/mituan8/pay/internal/service/wallet"
 	"github.com/pkg/errors"
 	"golang.org/x/sync/errgroup"
 )
@@ -150,8 +150,8 @@ func (s *Service) determineIncomingStatus(ctx context.Context, tx *transaction.T
 		return nil
 	}
 
-	// Reworked to If amount is less than expected we can tolerate $0.05 round error
-	oneCent, err := money.USD.MakeAmount("5")
+	// If amount is less than expected we can tolerate $0.01 round error
+	oneCent, err := money.USD.MakeAmount("1")
 	if err != nil {
 		return err
 	}
@@ -171,8 +171,8 @@ func (s *Service) determineIncomingStatus(ctx context.Context, tx *transaction.T
 		return nil
 	}
 
-	// Even when adding $0.05 in crypto to input.Amount it's still less than required.
-    // In that case let's mark tx as inProgressInvalid
+	// Even when adding $0.01 in crypto to input.Amount it's still less than required.
+	// In that case let's mark tx as inProgressInvalid
 	tx.Status = transaction.StatusInProgressInvalid
 	tx.MetaData[transaction.MetaErrorReason] = "incoming tx amount is less than expected"
 

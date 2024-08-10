@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 
 	"github.com/google/uuid"
-	kms "github.com/oxygenpay/oxygen/internal/kms/wallet"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/transaction"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
+	kms "github.com/mituan8/pay/internal/kms/wallet"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/transaction"
+	"github.com/mituan8/pay/internal/service/wallet"
 	"github.com/pkg/errors"
 )
 

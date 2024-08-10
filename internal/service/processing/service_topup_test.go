@@ -3,12 +3,12 @@ package processing_test
 import (
 	"testing"
 
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/payment"
-	"github.com/oxygenpay/oxygen/internal/service/processing"
-	"github.com/oxygenpay/oxygen/internal/service/transaction"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
-	"github.com/oxygenpay/oxygen/internal/test"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/payment"
+	"github.com/mituan8/pay/internal/service/processing"
+	"github.com/mituan8/pay/internal/service/transaction"
+	"github.com/mituan8/pay/internal/service/wallet"
+	"github.com/mituan8/pay/internal/test"
 	"github.com/samber/lo"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
