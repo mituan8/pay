@@ -8,16 +8,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/oxygenpay/oxygen/internal/bus"
-	"github.com/oxygenpay/oxygen/internal/db/repository"
-	"github.com/oxygenpay/oxygen/internal/event/paymentevents"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/merchant"
-	"github.com/oxygenpay/oxygen/internal/service/payment"
-	"github.com/oxygenpay/oxygen/internal/service/transaction"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
-	"github.com/oxygenpay/oxygen/internal/test"
-	"github.com/oxygenpay/oxygen/internal/util"
+	"github.com/mituan8/pay/internal/bus"
+	"github.com/mituan8/pay/internal/db/repository"
+	"github.com/mituan8/pay/internal/event/paymentevents"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/merchant"
+	"github.com/mituan8/pay/internal/service/payment"
+	"github.com/mituan8/pay/internal/service/transaction"
+	"github.com/mituan8/pay/internal/service/wallet"
+	"github.com/mituan8/pay/internal/test"
+	"github.com/mituan8/pay/internal/util"
 	"github.com/samber/lo"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -133,7 +133,7 @@ func TestHandler_ProcessPaymentStatusUpdate(t *testing.T) {
 	assert.Contains(t, (*responses)[0], "processed payment #1: 50 USD for merchant")
 	assert.Contains(t, (*responses)[0], mt.Name)
 	assert.Contains(t, (*responses)[0], "isTest=false")
-	assert.Contains(t, (*responses)[0], "pay.o2pay.co")
+	assert.Contains(t, (*responses)[0], "pay.aefbay.com")
 }
 
 func marshal(v any) []byte {
