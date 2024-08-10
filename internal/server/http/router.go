@@ -6,17 +6,17 @@ import (
 
 	"github.com/labstack/echo/v4"
 	mw "github.com/labstack/echo/v4/middleware"
-	"github.com/oxygenpay/oxygen/internal/auth"
-	v1 "github.com/oxygenpay/oxygen/internal/server/http/internalapi"
-	"github.com/oxygenpay/oxygen/internal/server/http/merchantapi"
-	merchantauth "github.com/oxygenpay/oxygen/internal/server/http/merchantapi/auth"
-	"github.com/oxygenpay/oxygen/internal/server/http/middleware"
-	"github.com/oxygenpay/oxygen/internal/server/http/paymentapi"
-	"github.com/oxygenpay/oxygen/internal/server/http/webhook"
-	"github.com/oxygenpay/oxygen/internal/service/user"
+	"github.com/mituan8/pay/internal/auth"
+	v1 "github.com/mituan8/pay/internal/server/http/internalapi"
+	"github.com/mituan8/pay/internal/server/http/merchantapi"
+	merchantauth "github.com/mituan8/pay/internal/server/http/merchantapi/auth"
+	"github.com/mituan8/pay/internal/server/http/middleware"
+	"github.com/mituan8/pay/internal/server/http/paymentapi"
+	"github.com/mituan8/pay/internal/server/http/webhook"
+	"github.com/mituan8/pay/internal/service/user"
 )
 
-// WithDashboardAPI setups routes for Merchant's Dashboard (app.o2pay.co)
+// WithDashboardAPI setups routes for Merchant's Dashboard (app.aefbay.com)
 func WithDashboardAPI(
 	cfg Config,
 	handler *merchantapi.Handler,
@@ -103,7 +103,7 @@ func WithDashboardAPI(
 	}
 }
 
-// WithMerchantAPI setups Merchant's API routes (api.o2pay.co)
+// WithMerchantAPI setups Merchant's API routes (api.aefbay.com)
 func WithMerchantAPI(handler *merchantapi.Handler, tokensManager *auth.TokenAuthManager) Opt {
 	return func(s *Server) {
 		merchantAPI := s.echo.Group(
@@ -139,7 +139,7 @@ func setupCommonMerchantRoutes(g *echo.Group, handler *merchantapi.Handler) {
 	g.GET("/customer/:customerId", handler.GetCustomerDetails)
 }
 
-// WithPaymentAPI setups routes public-facing payment api (pay.o2pay.co)
+// WithPaymentAPI setups routes public-facing payment api (pay.aefbay.com)
 func WithPaymentAPI(handler *paymentapi.Handler, cfg Config) Opt {
 	return func(s *Server) {
 		paymentAPI := s.echo.Group(
