@@ -66,7 +66,7 @@ type PaymentLink struct {
 	SuccessMessage *string `json:"successMessage"`
 
 	// Link's URL
-	// Example: https://pay.o2pay.co/link/ufaiCu6J
+	// Example: https://pay.aefbay.com/link/ufaiCu6J
 	// Required: true
 	URL string `json:"url"`
 }
