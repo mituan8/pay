@@ -6,8 +6,8 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v4"
-	"github.com/oxygenpay/oxygen/internal/db/repository"
-	"github.com/oxygenpay/oxygen/internal/kms/wallet"
+	"github.com/mituan8/pay/internal/db/repository"
+	"github.com/mituan8/pay/internal/kms/wallet"
 	"github.com/pkg/errors"
 )
 
