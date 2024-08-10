@@ -11,9 +11,9 @@ import (
 	"io"
 	"net/http"
 
-	kms "github.com/oxygenpay/oxygen/internal/kms/wallet"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/registry"
+	kms "github.com/mituan8/pay/internal/kms/wallet"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/registry"
 	"github.com/oxygenpay/tatum-sdk/tatum"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
