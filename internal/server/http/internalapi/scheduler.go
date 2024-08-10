@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/labstack/echo/v4"
-	"github.com/oxygenpay/oxygen/internal/log"
-	"github.com/oxygenpay/oxygen/internal/scheduler"
-	"github.com/oxygenpay/oxygen/internal/server/http/common"
-	"github.com/oxygenpay/oxygen/internal/util"
-	"github.com/oxygenpay/oxygen/pkg/api-admin/v1/model"
+	"github.com/mituan8/pay/internal/log"
+	"github.com/mituan8/pay/internal/scheduler"
+	"github.com/mituan8/pay/internal/server/http/common"
+	"github.com/mituan8/pay/internal/util"
+	"github.com/mituan8/pay/pkg/api-admin/v1/model"
 )
 
 func (h *Handler) RunSchedulerJob(c echo.Context) error {
