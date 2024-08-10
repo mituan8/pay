@@ -5,11 +5,11 @@ import (
 	"net/url"
 
 	"github.com/labstack/echo/v4"
-	"github.com/oxygenpay/oxygen/internal/server/http/common"
-	"github.com/oxygenpay/oxygen/internal/server/http/middleware"
-	"github.com/oxygenpay/oxygen/internal/service/merchant"
-	"github.com/oxygenpay/oxygen/internal/util"
-	"github.com/oxygenpay/oxygen/pkg/api-dashboard/v1/model"
+	"github.com/mituan8/pay/internal/server/http/common"
+	"github.com/mituan8/pay/internal/server/http/middleware"
+	"github.com/mituan8/pay/internal/service/merchant"
+	"github.com/mituan8/pay/internal/util"
+	"github.com/mituan8/pay/pkg/api-dashboard/v1/model"
 )
 
 func (h *Handler) ListMerchants(c echo.Context) error {
@@ -42,7 +42,7 @@ func (h *Handler) CreateMerchant(c echo.Context) error {
 	}
 
 	if _, err := url.ParseRequestURI(req.Website); err != nil {
-		return common.ValidationErrorItemResponse(c, "website", "website should be a valid URL (e.g. https://o2pay.co)")
+		return common.ValidationErrorItemResponse(c, "website", "website should be a valid URL (e.g. https://aefbay.com)")
 	}
 
 	ctx := c.Request().Context()
@@ -105,7 +105,7 @@ func (h *Handler) UpdateMerchant(c echo.Context) error {
 	}
 
 	if _, err := url.ParseRequestURI(req.Website); err != nil {
-		return common.ValidationErrorItemResponse(c, "website", "website should be a valid URL (e.g. https://o2pay.co)")
+		return common.ValidationErrorItemResponse(c, "website", "website should be a valid URL (e.g. https://aefbay.com)")
 	}
 
 	m := middleware.ResolveMerchant(c)

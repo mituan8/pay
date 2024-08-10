@@ -5,10 +5,10 @@ import (
 
 	"github.com/go-openapi/strfmt"
 	"github.com/labstack/echo/v4"
-	"github.com/oxygenpay/oxygen/internal/auth"
-	"github.com/oxygenpay/oxygen/internal/server/http/common"
-	"github.com/oxygenpay/oxygen/internal/server/http/middleware"
-	"github.com/oxygenpay/oxygen/pkg/api-dashboard/v1/model"
+	"github.com/mituan8/pay/internal/auth"
+	"github.com/mituan8/pay/internal/server/http/common"
+	"github.com/mituan8/pay/internal/server/http/middleware"
+	"github.com/mituan8/pay/pkg/api-dashboard/v1/model"
 	"github.com/pkg/errors"
 )
 

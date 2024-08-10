@@ -4,12 +4,12 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/oxygenpay/oxygen/internal/kms/wallet"
-	"github.com/oxygenpay/oxygen/internal/server/http/common"
-	"github.com/oxygenpay/oxygen/internal/server/http/middleware"
-	"github.com/oxygenpay/oxygen/internal/service/merchant"
-	"github.com/oxygenpay/oxygen/internal/util"
-	"github.com/oxygenpay/oxygen/pkg/api-dashboard/v1/model"
+	"github.com/mituan8/pay/internal/kms/wallet"
+	"github.com/mituan8/pay/internal/server/http/common"
+	"github.com/mituan8/pay/internal/server/http/middleware"
+	"github.com/mituan8/pay/internal/service/merchant"
+	"github.com/mituan8/pay/internal/util"
+	"github.com/mituan8/pay/pkg/api-dashboard/v1/model"
 	"github.com/pkg/errors"
 )
 

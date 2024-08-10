@@ -6,12 +6,12 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/google/uuid"
 	"github.com/labstack/echo/v4"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/server/http/common"
-	"github.com/oxygenpay/oxygen/internal/server/http/middleware"
-	"github.com/oxygenpay/oxygen/internal/service/payment"
-	"github.com/oxygenpay/oxygen/internal/util"
-	"github.com/oxygenpay/oxygen/pkg/api-dashboard/v1/model"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/server/http/common"
+	"github.com/mituan8/pay/internal/server/http/middleware"
+	"github.com/mituan8/pay/internal/service/payment"
+	"github.com/mituan8/pay/internal/util"
+	"github.com/mituan8/pay/pkg/api-dashboard/v1/model"
 	"github.com/pkg/errors"
 )
 

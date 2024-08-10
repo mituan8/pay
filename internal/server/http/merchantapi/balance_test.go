@@ -5,11 +5,11 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/oxygenpay/oxygen/internal/auth"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
-	"github.com/oxygenpay/oxygen/internal/test"
-	"github.com/oxygenpay/oxygen/pkg/api-dashboard/v1/model"
+	"github.com/mituan8/pay/internal/auth"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/wallet"
+	"github.com/mituan8/pay/internal/test"
+	"github.com/mituan8/pay/pkg/api-dashboard/v1/model"
 	"github.com/stretchr/testify/assert"
 )
 

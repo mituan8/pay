@@ -1,12 +1,12 @@
 package merchantapi
 
 import (
-	"github.com/oxygenpay/oxygen/internal/auth"
-	"github.com/oxygenpay/oxygen/internal/bus"
-	"github.com/oxygenpay/oxygen/internal/service/blockchain"
-	"github.com/oxygenpay/oxygen/internal/service/merchant"
-	"github.com/oxygenpay/oxygen/internal/service/payment"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
+	"github.com/mituan8/pay/internal/auth"
+	"github.com/mituan8/pay/internal/bus"
+	"github.com/mituan8/pay/internal/service/blockchain"
+	"github.com/mituan8/pay/internal/service/merchant"
+	"github.com/mituan8/pay/internal/service/payment"
+	"github.com/mituan8/pay/internal/service/wallet"
 	"github.com/rs/zerolog"
 )
 
