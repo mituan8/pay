@@ -9,8 +9,8 @@ import (
 	"github.com/labstack/echo/v4"
 	mw "github.com/labstack/echo/v4/middleware"
 	"github.com/labstack/gommon/log"
-	"github.com/oxygenpay/oxygen/internal/server/http/common"
-	"github.com/oxygenpay/oxygen/internal/util"
+	"github.com/mituan8/pay/internal/server/http/common"
+	"github.com/mituan8/pay/internal/util"
 	"github.com/rs/zerolog"
 )
 

@@ -7,10 +7,10 @@ import (
 	"github.com/gorilla/sessions"
 	"github.com/labstack/echo-contrib/session"
 	"github.com/labstack/echo/v4"
-	"github.com/oxygenpay/oxygen/internal/auth"
-	"github.com/oxygenpay/oxygen/internal/service/merchant"
-	"github.com/oxygenpay/oxygen/internal/service/user"
-	"github.com/oxygenpay/oxygen/pkg/api-dashboard/v1/model"
+	"github.com/mituan8/pay/internal/auth"
+	"github.com/mituan8/pay/internal/service/merchant"
+	"github.com/mituan8/pay/internal/service/user"
+	"github.com/mituan8/pay/pkg/api-dashboard/v1/model"
 )
 
 // nolint gosec
