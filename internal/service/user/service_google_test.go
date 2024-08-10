@@ -3,9 +3,9 @@ package user_test
 import (
 	"testing"
 
-	"github.com/oxygenpay/oxygen/internal/auth"
-	"github.com/oxygenpay/oxygen/internal/service/user"
-	"github.com/oxygenpay/oxygen/internal/test"
+	"github.com/mituan8/pay/internal/auth"
+	"github.com/mituan8/pay/internal/service/user"
+	"github.com/mituan8/pay/internal/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -65,14 +65,14 @@ func TestService_ResolveWithGoogle(t *testing.T) {
 			t.Run("access allowed", func(t *testing.T) {
 				// ARRANGE
 				// Given a whitelist
-				_, err := tc.Services.Registry.Set(tc.Context, "registration.whitelist", "hey@o2pay.co,test@me.com")
+				_, err := tc.Services.Registry.Set(tc.Context, "registration.whitelist", "TRX887@outlook.com,test@me.com")
 				require.NoError(t, err)
 
 				// ACT
 				_, err = tc.Services.Users.ResolveWithGoogle(tc.Context, &auth.GoogleUser{
 					Name:  "John",
 					Sub:   "abc123",
-					Email: "hey@o2pay.co",
+					Email: "TRX887@outlook.com",
 				})
 
 				// ASSERT

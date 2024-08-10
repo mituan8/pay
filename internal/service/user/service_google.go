@@ -8,9 +8,9 @@ import (
 	"github.com/google/uuid"
 	"github.com/jackc/pgtype"
 	"github.com/jackc/pgx/v4"
-	"github.com/oxygenpay/oxygen/internal/auth"
-	"github.com/oxygenpay/oxygen/internal/bus"
-	"github.com/oxygenpay/oxygen/internal/db/repository"
+	"github.com/mituan8/pay/internal/auth"
+	"github.com/mituan8/pay/internal/bus"
+	"github.com/mituan8/pay/internal/db/repository"
 	"github.com/pkg/errors"
 )
 
