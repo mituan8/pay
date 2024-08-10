@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/oxygenpay/oxygen/internal/bus"
-	"github.com/oxygenpay/oxygen/internal/db/repository"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/util"
+	"github.com/mituan8/pay/internal/bus"
+	"github.com/mituan8/pay/internal/db/repository"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/util"
 	"github.com/pkg/errors"
 )
 
