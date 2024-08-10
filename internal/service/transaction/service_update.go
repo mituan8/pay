@@ -8,9 +8,9 @@ import (
 
 	"github.com/jackc/pgtype"
 	pgx "github.com/jackc/pgx/v4"
-	"github.com/oxygenpay/oxygen/internal/db/repository"
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/wallet"
+	"github.com/mituan8/pay/internal/db/repository"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/wallet"
 	"github.com/pkg/errors"
 )
 
