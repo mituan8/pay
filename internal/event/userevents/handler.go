@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/oxygenpay/oxygen/internal/bus"
-	"github.com/oxygenpay/oxygen/internal/service/user"
-	"github.com/oxygenpay/oxygen/internal/slack"
+	"github.com/mituan8/pay/internal/bus"
+	"github.com/mituan8/pay/internal/service/user"
+	"github.com/mituan8/pay/internal/slack"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 )
