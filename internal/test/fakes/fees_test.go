@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/blockchain"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/blockchain"
 	"github.com/stretchr/testify/assert"
 )
 

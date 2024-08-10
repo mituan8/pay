@@ -3,8 +3,8 @@ package fakes
 import (
 	"context"
 
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/blockchain"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/blockchain"
 )
 
 // ConvertorProxy represents proxy for real implementation of blockchain.Convertor that uses

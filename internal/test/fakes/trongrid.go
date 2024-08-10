@@ -7,7 +7,7 @@ import (
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/oxygenpay/oxygen/internal/provider/trongrid"
+	"github.com/mituan8/pay/internal/provider/trongrid"
 	"github.com/rs/zerolog"
 )
 
