@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/oxygenpay/oxygen/internal/money"
+	"github.com/mituan8/pay/internal/money"
 	"github.com/pkg/errors"
 )
 

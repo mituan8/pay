@@ -4,7 +4,7 @@ import (
 	cryptorand "crypto/rand"
 	"testing"
 
-	"github.com/oxygenpay/oxygen/internal/kms/wallet"
+	"github.com/mituan8/pay/internal/kms/wallet"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/wemeetagain/go-hdwallet"
