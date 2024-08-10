@@ -4,8 +4,8 @@ import (
 	"time"
 
 	"github.com/jellydator/ttlcache/v3"
-	"github.com/oxygenpay/oxygen/internal/provider/tatum"
-	"github.com/oxygenpay/oxygen/internal/provider/trongrid"
+	"github.com/mituan8/pay/internal/provider/tatum"
+	"github.com/mituan8/pay/internal/provider/trongrid"
 	client "github.com/oxygenpay/tatum-sdk/tatum"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"

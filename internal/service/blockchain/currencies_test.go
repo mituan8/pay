@@ -3,9 +3,9 @@ package blockchain_test
 import (
 	"testing"
 
-	"github.com/oxygenpay/oxygen/internal/money"
-	"github.com/oxygenpay/oxygen/internal/service/blockchain"
-	"github.com/oxygenpay/oxygen/internal/test"
+	"github.com/mituan8/pay/internal/money"
+	"github.com/mituan8/pay/internal/service/blockchain"
+	"github.com/mituan8/pay/internal/test"
 	"github.com/samber/lo"
 	"github.com/stretchr/testify/assert"
 )
