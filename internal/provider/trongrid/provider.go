@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/oxygenpay/oxygen/internal/util"
+	"github.com/mituan8/pay/internal/util"
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 	"github.com/tidwall/gjson"
