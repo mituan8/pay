@@ -4,9 +4,9 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/oxygenpay/oxygen/internal/util"
-	kmswallet "github.com/oxygenpay/oxygen/pkg/api-kms/v1/client/wallet"
-	kmsmodel "github.com/oxygenpay/oxygen/pkg/api-kms/v1/model"
+	"github.com/mituan8/pay/internal/util"
+	kmswallet "github.com/mituan8/pay/pkg/api-kms/v1/client/wallet"
+	kmsmodel "github.com/mituan8/pay/pkg/api-kms/v1/model"
 	"github.com/stretchr/testify/mock"
 )
 
